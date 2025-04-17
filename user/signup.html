@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/user/js/user_signup.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">LibraryMS</div>
+                <div class="nav-links">
+                    <a href="/index.html">Dashboard</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="user-signup" class="auth-section">
+        <div class="auth-card">
+            <h2>User Sign Up</h2>
+            <form>
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm">Confirm Password</label>
+                    <input type="password" id="signup-confirm" placeholder="Confirm your password" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="form-cancel" onclick="hideSections()">Cancel</button>
+                    <button type="submit" class="form-submit">Sign Up</button>
+                </div>
+                <div class="switch-form">
+                    Already have an account? <a href="login.html" onclick="showSection('user-login')">Login</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Library Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
